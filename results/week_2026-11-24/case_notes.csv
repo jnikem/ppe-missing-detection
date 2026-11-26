@@ -1,0 +1,9 @@
+case,title,img,image,observation
+1,라벨 범위 의심,source-485eb05877af0e242d34e297d390c7cd.jpg,cases/case_01.jpg,미착용 라벨 일부가 머리보다 넓게 사람 몸을 감싼다. 라벨 범위 재검토가 필요하다.
+2,다른 클래스와 겹침,source-4c206d0f090805255c642a9a3d58d0e5.jpg,cases/case_02.jpg,일반 모자처럼 보이는 영역에 helmet 정답이 있다. 미착용 예측과 정답 클래스가 다르다. 외형만으로 라벨 오류를 확정하지 않는다.
+3,박스 범위 차이,ultralytics-ppe-nov2026-296.jpg,cases/case_03.jpg,앞쪽 작업자의 머리는 찾았지만 얼굴까지 포함한 정답 박스와 범위가 다르다.
+4,중복 예측,ultralytics-ppe-nov2026-524.jpg,cases/case_04.jpg,같은 미착용 정답 주변에 예측이 두 개 있다. 하나만 TP로 연결하고 나머지는 FP로 유지한다.
+5,미착용과 안전모 혼동,source-38d248f0e2100035cc7c30a81392baa8.jpg,cases/case_05.jpg,미착용 정답이 있는 머리 일부에 helmet 예측이 겹친다. 모자 등 외형의 영향을 의심할 수 있으나 원인을 확정하지 않는다.
+6,미착용 미탐,source-23d79ca5bf1c6544231641a70af3f37d.jpg,cases/case_06.jpg,앞쪽 작업자의 미착용 머리를 찾지 못한다. 원거리 사례 외에도 미탐이 있다.
+7,미착용 탐지 성공,source-00f1fbfd9c8193a3c5a071512cf8c0a7.jpg,cases/case_07.jpg,출입구 앞 작업자의 미착용 머리를 정답과 맞게 찾는다.
+8,판독 보류,ultralytics-ppe-nov2026-022.jpg,cases/case_08.jpg,배경의 작은 영역에 미착용 예측이 있지만 겹치는 머리 정답이 없다. 사람 머리인지 확실하지 않아 보류한다.
